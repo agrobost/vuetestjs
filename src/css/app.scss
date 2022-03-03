@@ -1,1 +1,36 @@
 // app global css in SCSS form
+@font-face {
+  font-family: kimberley;
+  unicode-range: U+30-39;
+  src: url(./fonts/kimberley.woff);
+}
+.kimberley {
+  font-family: "kimberley", "museo-sans-700";
+}
+
+@font-face {
+  font-family: museo-sans-700;
+  src: url(./fonts/museo-sans-700.woff);
+}
+.museo-sans-700 {
+  font-family: "museo-sans-700";
+}
+
+@font-face {
+  font-family: museo-sans-condensed-700;
+  src: url(./fonts/museo-sans-condensed-700.woff);
+}
+.museo-sans-condensed-700 {
+  font-family: "museo-sans-condensed-700";
+}
+
+body {
+  font-family: "museo-sans-700";
+}
+html {
+  background: url("~assets/main-bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
