@@ -8,12 +8,14 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "dev:win": "cross-env QENV=DEV quasar dev"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "firebase": "^9.6.8",
     "pinia": "^2.0.11",
     "quasar": "^2.0.0",
     "vue": "^3.0.0",
@@ -22,7 +24,10 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",
+    "@dotenv/cli": "^2.1.0",
     "@quasar/app": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
     "eslint": "^7.14.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.0.0",
